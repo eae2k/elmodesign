@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Designer gráfico especializado em letreiros, camisas, logos, banners e muito mais. Peça seu orçamento!">
+<meta name="author" content="ElmoDesign">
+<meta name="keywords" content="design gráfico, letreiro ACM, camisas personalizadas, logos, identidade visual, Elmo Design, Rio de Janeiro">
+  <title>Elmo Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #8f5fff;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #8f5fff, #2b2b2b);
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    .btn {
+      background-color: #8f5fff;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Carrossel */
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .carousel-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+}
+.carousel .card {
+  background-color: #1f1f1f;
+  padding: 50px 50px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  min-width: 250px;
+  max-width: 300px;
+}
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact form input,
+    .contact form textarea {
+      background-color: #1f1f1f;
+      border: 1px solid #333;
+      color: #fff;
+      font-size: 15px;
+      padding: 12px;
+      border-radius: 8px;
+      transition: border 0.3s;
+      resize: none;
+    }
+
+    .contact form input:focus,
+    .contact form textarea:focus {
+      outline: none;
+      border: 1px solid #8f5fff;
+    }
+
+    .contact form button {
+      background-color: #8f5fff;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact form button:hover {
+      background-color: #7c4dff;
+    }
+
+    .success-message {
+      text-align: center;
+      color: #8f5fff;
+      font-weight: 600;
+      margin-top: 15px;
+      display: none;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    .social-icons a:hover {
+      color: #8f5fff;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      .hero h1 {
+        font-size: 28px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+      .carousel-container {
+        flex-direction: column;
+      }
+    }
+/* 🔥 BOTÃO FLUTUANTE WHATSAPP */
+.whatsapp-float {
+  ...
+}
+
+/* 🖼️ Estilo das imagens do portfólio com hover animado */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px 0;
+}
+.card {
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.card p {
+  margin-top: 10px;
+}
+
+    /* 🔥 BOTÃO FLUTUANTE WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<h2 style="display: flex; align-items: center; gap: 12px;">
+  <img src="logo.jpg" alt="Elmo Design Logo" style="height: 45px;">
+  <span style="font-size: 20px; font-weight: 600;">ElmoDesign</span>
+</h2>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Tecnologia Visual que não para de Evoluir</h1>
+    <p>Sou Elmo, e ajudo você a transformar ideias em materiais visuais de destaque.</p>
+    <a class="btn" href="#contato">Peça seu orçamento</a>
+  </section>
+
+  <section id="sobre">
+    <h2 class="section-title">Sobre mim</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      Olá! Eu sou Elmo, um designer gráfico que trabalha de forma independente oferecendo soluções criativas e personalizadas para empresas, eventos e projetos diversos. Cada trabalho é feito com dedicação, buscando sempre entregar qualidade e estilo em cada detalhe.
+    </p>
+  </section>
+
+  <section id="servicos">
+    <h2 class="section-title">O que eu faço</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn" onclick="anteriorServico()">&#10094;</button>
+      <div id="servicoCard" class="carousel"></div>
+      <button class="carousel-btn" onclick="proximoServico()">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="portfolio">
+  <h2 class="section-title">Alguns dos meus trabalhos</h2>
+  <div class="portfolio" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+    
+    <div class="card">
+  <img src="cartao-real.jpg" alt="Cartão de Visita Real">
+  <p>Cartão de visita desenvolvido com acabamento profissional.</p>
+</div>
+
+    
+    <div class="card">
+      <img src="letreiro-real.jpg" alt="Letreiro Real em ACM" style="width:100%; border-radius: 8px;">
+      <p>Letreiro em ACM personalizado para fachada comercial.</p>
+    </div>
+    
+    <div class="card">
+      <img src="envelopamento-carro.jpg" alt="Envelopamento automotivo" style="width:100%; border-radius: 8px;">
+      <p>Envelopamento de veículo com identidade visual personalizada para empresa local.</p>
+    </div>
+
+    <!-- Novos itens -->
+    <div class="card">
+      <img src="camisa.jpg" alt="Camisa personalizada" style="width:100%; border-radius: 8px;">
+      <p>Camisa personalizada com estampa exclusiva (frente e verso).</p>
+    </div>
+    
+    <div class="card">
+      <img src="logo-mascote.jpg" alt="Logo com mascote" style="width:100%; border-radius: 8px;">
+      <p>Criação de mascote e logo personalizado para sua marca.</p>
+    </div>
+  </div>
+</section>
+
+  <section class="contact" id="contato">
+    <h2 class="section-title">Fale comigo</h2>
+    <form id="formContato" onsubmit="enviarFormulario(event)">
+      <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar por e-mail</button>
+    </form>
+    <br />
+    <div id="success-message" class="success-message">✅ Sua mensagem foi enviada com sucesso!</div>
+  </section>
+
+  <footer>
+    <p>© 2025 Elmo Design · legalkauan77@gmail.com</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/elmodesign77/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/5521976782359" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:legalkauan77@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- ✅ Botão flutuante do WhatsApp -->
+ <a href="https://wa.me/5521976782359" target="_blank" class="whatsapp-float" title="Fale comigo no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+  <script>
+  function sendWhatsAppMessage() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
+    const texto = `Nome: ${nome}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
+    const numero = '5521976782359';
+    const url = `https://wa.me/${numero}?text=${texto}`;
+    window.open(url, '_blank');
+  }
+
+  function enviarFormulario(event) {
+    event.preventDefault();
+    const form = document.getElementById("formContato");
+    const formData = new FormData(form);
+    fetch("https://formsubmit.co/ajax/legalkauan77@gmail.com", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json'
+      },
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        document.getElementById("success-message").style.display = "block";
+        form.reset();
+      } else {
+        alert("Erro ao enviar. Tente novamente.");
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert("Erro ao enviar. Tente novamente.");
+    });
+  }
+
+  const servicos = [
+    {titulo: "Letreiros em ACM", texto: "Produção e instalação de letreiros em ACM com letras caixa e 3D."},
+    {titulo: "Banners e Front Light", texto: "Criação de peças visuais impactantes para sua fachada ou evento."},
+    {titulo: "Adesivos e Envelopamentos", texto: "Adesivação de vitrines, veículos e superfícies diversas."},
+    {titulo: "Camisas personalizadas", texto: "Estampas sob medida para times, eventos ou marcas."},
+    {titulo: "Cartões e Folhetos", texto: "Materiais gráficos como cartões de visita e panfletos com visual profissional."},
+    {titulo: "Convites", texto: "Convites personalizados para festas, casamentos e eventos especiais."},
+    {titulo: "Criação de Logos", texto: "Desenvolvimento de identidades visuais únicas e profissionais para marcas."},
+  ];
+
+  let index = 0;
+
+  function atualizarServico() {
+    const container = document.getElementById("servicoCard");
+    container.innerHTML = "";
+    const servicosVisiveis = servicos.slice(index, index + 3);
+    servicosVisiveis.forEach(servico => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `<h3>${servico.titulo}</h3><p>${servico.texto}</p>`;
+      container.appendChild(card);
+    });
+  }
+
+  function anteriorServico() {
+    index = index - 3;
+    if (index < 0) index = servicos.length - 3;
+    atualizarServico();
+  }
+
+  function proximoServico() {
+    index = index + 3;
+    if (index >= servicos.length) index = 0;
+    atualizarServico();
+  }
+
+  window.onload = function () {
+  atualizarServico();
+
+  // Modal de imagem ao clicar
+  const imagens = document.querySelectorAll('.card img');
+  const modal = document.getElementById('imagemModal');
+  const modalImg = document.getElementById('imagemModalConteudo');
+
+  imagens.forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+};
+
+modal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+</script>
+<!-- Modal de Imagem -->
+<div id="imagemModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.9); z-index:1000; justify-content:center; align-items:center;">
+  <img id="imagemModalConteudo" style="max-width:90%; max-height:90%; border-radius: 12px;">
+</div>
+</body>
+</html>
