@@ -174,23 +174,44 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 10px;
-      }
-      .hero h1 {
-        font-size: 28px;
-      }
-      .hero p {
-        font-size: 16px;
-      }
-      .carousel-container {
-        flex-direction: column;
-      }
-    }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .carousel .card {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .carousel-btn {
+    font-size: 24px;
+  }
+}
+
 /* 🔥 BOTÃO FLUTUANTE WHATSAPP */
 .whatsapp-float {
 
